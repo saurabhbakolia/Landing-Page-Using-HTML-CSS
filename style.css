@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black_color: #100f0f;
+  --text_color: #f1f1f1;
+  --orange_color: #ef5b0c;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+::selection{
+  color:var(--orange_color);
+}
+
+body {
+  background-color: var(--black_color);
+  color: var(--text_color);
+  width: 100vw;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 10rem;
+  width: 100%;
+  height: 12rem;
+}
+
+nav div:first-child {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+nav div:first-child span {
+  color: var(--orange_color);
+  opacity: 0.9;
+}
+
+nav div:first-child span:hover {
+  opacity: 1;
+}
+
+nav div:first-child:hover {
+  cursor: pointer;
+}
+
+nav div ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 500px;
+}
+
+nav div ul li {
+  list-style-type: none;
+  font-size: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+nav div ul li:hover {
+  cursor: pointer;
+  color: var(--orange_color);
+}
+
+main {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding-inline: 1rem;
+}
+
+main h1 {
+  font-size: 6rem;
+}
+
+main p {
+  font-size: 2rem;
+  width: 60%;
+}
+
+main button {
+  font-size: 3rem;
+  background: var(--orange_color);
+  padding: 1.2rem 1.4rem 1.2rem 1.4rem;
+  border-radius: 0.3rem;
+  margin-block-start: 3.2rem;
+  opacity: 0.9;
+  outline: none;
+  border: none;
+}
+
+main button:hover {
+  opacity: 1;
+}
+
+main button a {
+  text-decoration: none;
+  color: var(--text_color);
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    height: 12rem;
+    margin-block: 4rem;
+  }
+
+  nav div ul {
+    width: 440px;
+  }
+  main {
+    margin-block-start: 6rem;
+  }
+  main button {
+    font-size: 2.4rem;
+    margin-block-start: 6rem;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    height: 12rem;
+    margin-block: 4rem;
+  }
+}
