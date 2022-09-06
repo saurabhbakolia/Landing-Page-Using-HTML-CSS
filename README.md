@@ -1,2 +1,4 @@
 # Landing Page using Pure html, css
-![image](https://user-images.githubusercontent.com/78996216/184473377-189b3ad6-2b65-460f-b99a-7150272b70e9.png)
+![2022-09-06-10-52-13](https://user-images.githubusercontent.com/78996216/188554036-62f80ed8-785f-4eae-addb-a7e7570023ad.gif)
+
+
